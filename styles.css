@@ -1,0 +1,71 @@
+@font-face{
+    font-family: 'Matangi';
+    src: url('fonts/Matangi/Matangi-VariableFont_wght.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Matangi', sans-serif;
+}
+
+.header-line {
+  background: linear-gradient(
+    to right,
+    #e5e7eb 0%,
+    #e5e7eb 41%,
+    white 46%,
+    white 53%,
+    #e5e7eb 58%,
+    #e5e7eb 100%
+  );
+  z-index: 0;
+}
+
+#menu {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 1024px) {
+  .header-line {
+    background: linear-gradient(
+      to right,
+      #e5e7eb 0%,
+      #e5e7eb 35%,
+      white 43%,
+      white 57%,
+      #e5e7eb 65%,
+      #e5e7eb 100%
+    );
+  }
+}
+
+/* Móviles grandes */
+@media (max-width: 768px) {
+  .header-line {
+    background: linear-gradient(
+      to right,
+      #e5e7eb 0%,
+      #e5e7eb 25%,
+      white 38%,
+      white 62%,
+      #e5e7eb 75%,
+      #e5e7eb 100%
+    );
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .header-line {
+    background: linear-gradient(
+      to right,
+      #e5e7eb 0%,
+      #e5e7eb 15%,
+      white 30%,
+      white 70%,
+      #e5e7eb 85%,
+      #e5e7eb 100%
+    );
+  }
+}
